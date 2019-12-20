@@ -6,12 +6,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Social Media Questionnaire</title>
 
 </head>
 
 <body>
+
+  <div class="wrapper">
+    <header>
+      <h1>Social Media Survey</h1>
+      <h2 class="description">The purpose of this survey is to discover how our clients interact with existing Social Media websites. With the results we will be able to decide whether our own community hub would be worthwhile, and if so help us design an effective space which will be useful to our users.</h2>
+    </header>
+    <form action="#">
+      <section>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" class="form-settings" required>
+        <label for="age">Age</label>
+        <input type="text" id="age" placeholder="Enter your age" class="form-settings" required>
+        <label for="email">E-mail Address</label>
+        <input type="text" id="email" placeholder="Enter your e-mail address" class="form-settings" required>
+      </section>
+
+      <hr>
+
+      <section>
+        <p>How often do you engage with your peers through existing community areas on the internet?</p>
+        <select name="howoften" id="dropdown">
+          <option disabled selected value="">Select an option</option>
+          <option value="monthly">Once a month</option>
+          <option value="weekly">Once a week</option>
+          <option value="dayly">Once a day</option>
+          <option value="hourly">Once an hour</option>
+          <option value="constantly">More than once an hour</option>
+        </select>
+      </section>
+
+      <hr>
+
+      <section class="checkboxes">
+        <p>What kind of environment do you find yourself in when you use these community resources? (<em>Check all that apply</em>)</p>
+        <label for="athome" class="checkboxContainer">At home
+          <input type="checkbox" name="environment" id="athome" value="home"><span class="checkmark"></span>
+        </label>
+        <label for="atwork" class="checkboxContainer">At Work
+          <input type="checkbox" name="environment" id="atwork" value="work"><span class="checkmark"></span>
+        </label>
+        <label for="commute" class="checkboxContainer">Whilst Commuting
+          <input type="checkbox" name="environment" id="commute" value="commute"><span class="checkmark"></span>
+        </label>
+        <label for="social" class="checkboxContainer">Whilst Socializing
+          <input type="checkbox" name="environment" id="social" value="social"><span class="checkmark"></span>
+        </label>
+      </section>
+
+      <hr>
+
+      <section class="checkboxes">
+        <p>What type of device do you most commonly use to interact with these social spaces?</p>
+        <label for="computer" class="radioContainer">Desktop Computer
+          <input type="radio" name="device" id="computer" value="computer"><span class="radioBtn"></span>
+        </label>
+        <label for="laptop" class="radioContainer">Laptop
+          <input type="radio" name="device" id="laptop" value="laptop"><span class="radioBtn"></span>
+        </label>
+        <label for="tablet" class="radioContainer">Tablet
+          <input type="radio" name="device" id="tablet" value="tablet"><span class="radioBtn"></span>
+        </label>
+        <label for="phone" class="radioContainer">Mobile Phone
+          <input type="radio" name="device" id="phone" value="phone"><span class="radioBtn"></span>
+        </label>
+      </section>
+
+      <hr>
+
+      <section class="checkboxes">
+        <p>What Social Media websites to you currently use? (<em>Check all that apply</em>)</p>
+        <label for="facebook" class="checkboxContainer">Facebook
+          <input type="checkbox" name="existing" id="facebook" value="facebook"><span class="checkmark"></span>
+        </label>
+        <label for="instagram" class="checkboxContainer">Instagram
+          <input type="checkbox" name="existing" id="instagram" value="instagram"><span class="checkmark"></span>
+        </label>
+        <label for="linkedin" class="checkboxContainer">LinkedIn
+          <input type="checkbox" name="existing" id="linkedin" value="linkedin"><span class="checkmark"></span>
+        </label>
+        <label for="twitter" class="checkboxContainer">Twitter
+          <input type="checkbox" name="existing" id="twitter" value="twitter"><span class="checkmark"></span>
+        </label>
+      </section>
+
+      <hr>
+
+      <section>
+        <p>What features of these existing community hubs do you find most useful, and spend most of your time using? (<em>Please be as descriptive as possible</em>)</p>
+        <textarea></textarea>
+      </section>
+
+      <button type="submit" id="submit">Submit</button>
+
+    </form>
+  </div>
   
 </body>
 
